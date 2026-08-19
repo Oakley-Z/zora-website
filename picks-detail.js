@@ -1,4 +1,4 @@
-const trsnslations = {
+const translations = {
   "zh-CN": {
     navAbout: "关于我",
     navSkills: "我的技能",
