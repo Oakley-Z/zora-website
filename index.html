@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Zora - Product x AI x Design. A dark 3D creator-style personal portfolio."
+    />
+    <title>Zora | Product x AI x Design</title>
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="preload" as="image" href="assets/my-photo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-light" aria-hidden="true"></div>
+
+    <main class="site-shell" id="home">
+      <section class="hero">
+        <div class="language-switcher fade-in" aria-label="Language">
+          <button class="lang-button" data-lang="zh-CN">简体中文</button>
+          <button class="lang-button" data-lang="zh-HK">繁體中文</button>
+          <button class="lang-button" data-lang="en">English</button>
+        </div>
+
+        <nav class="hero-nav fade-in" aria-label="Primary">
+          <a href="#about" data-i18n="navAbout">关于我</a>
+          <a href="#services" data-i18n="navSkills">我的技能</a>
+          <a href="#projects" data-i18n="navProjects">我的项目</a>
+          <a href="#picks" data-i18n="navPicks">我的推荐</a>
+          <a href="#contact" data-i18n="navContact">联系我</a>
+        </nav>
+
+        <div class="hero-heading-wrap fade-in">
+          <h1 class="hero-heading" data-i18n="heroTitle">Hi, i'm zora</h1>
+        </div>
+
+        <div class="hero-portrait magnet-target fade-in" aria-hidden="true">
+          <img src="assets/my-photo.png" alt="" />
+        </div>
+
+        <div class="hero-bottom">
+          <p class="hero-intro fade-in" data-i18n="heroIntro">
+            an ai product builder driven by making useful, beautiful and unexpected digital products
+          </p>
+          <a class="contact-button fade-in" href="#contact" data-i18n="contactMe">Contact Me</a>
+        </div>
+      </section>
+
+      <section class="marquee-section" aria-label="Project motion reel">
+        <div class="marquee-row" data-direction="right" id="marqueeRowOne"></div>
+        <div class="marquee-row" data-direction="left" id="marqueeRowTwo"></div>
+      </section>
+
+      <section class="about-section reveal" id="about">
+        <img class="decor decor-moon" src="assets/decor-moon.png" alt="" />
+        <img class="decor decor-cube" src="assets/decor-cube.png" alt="" />
+        <img class="decor decor-lego" src="assets/decor-lego.png" alt="" />
+        <img class="decor decor-orbit" src="assets/decor-orbit.png" alt="" />
+
+        <div class="about-inner">
+          <h2 class="section-title hero-heading" data-i18n="aboutTitle">About me</h2>
+          <div class="animated-copy" id="aboutAnimated"></div>
+          <a class="contact-button" href="#contact" data-i18n="contactMe">Contact Me</a>
+        </div>
+      </section>
+
+      <section class="services-section reveal" id="services">
+        <h2 class="services-title" data-i18n="servicesTitle">Services</h2>
+        <div class="service-list">
+          <article class="service-item">
+            <span>01</span>
+            <div>
+              <h3 data-i18n="serviceOneTitle">Product Thinking</h3>
+              <p data-i18n="serviceOneBody">Clarifying vague needs, finding the core problem, and turning ideas into usable product direction.</p>
+            </div>
+          </article>
+          <article class="service-item">
+            <span>02</span>
+            <div>
+              <h3 data-i18n="serviceTwoTitle">AI-assisted Building</h3>
+              <p data-i18n="serviceTwoBody">Using AI tools and vibe coding to move from requirements to prototypes, pages, automations and MVPs.</p>
+            </div>
+          </article>
+          <article class="service-item">
+            <span>03</span>
+            <div>
+              <h3 data-i18n="serviceThreeTitle">Visual Direction</h3>
+              <p data-i18n="serviceThreeBody">Shaping layout, typography, content rhythm and visual taste so products feel distinct instead of generic.</p>
+            </div>
+          </article>
+          <article class="service-item">
+            <span>04</span>
+            <div>
+              <h3 data-i18n="serviceFourTitle">Content Systems</h3>
+              <p data-i18n="serviceFourBody">Organizing personal stories, learning resources, books, videos and ideas into a coherent brand experience.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section reveal" id="projects">
+        <h2 class="section-title hero-heading" data-i18n="projectsTitle">Project</h2>
+        <div class="project-stack">
+          <article class="stack-card">
+            <header>
+              <span class="project-number">01</span>
+              <div>
+                <small data-i18n="projectOneType">Live MVP</small>
+                <h3 data-i18n="projectOneTitle">Personal Website</h3>
+              </div>
+              <a class="live-button" href="project-detail.html?project=personal-site" data-i18n="viewDetails">查看详情</a>
+            </header>
+            <div class="project-images">
+              <div>
+                <img src="assets/creator-tile-1.png" alt="Personal website preview" />
+                <img src="assets/creator-tile-5.png" alt="AI lab preview" />
+              </div>
+              <img src="assets/project-personal-site.png" alt="Zora website project" />
+            </div>
+          </article>
+
+          <article class="stack-card">
+            <header>
+              <span class="project-number">02</span>
+              <div>
+                <small data-i18n="projectTwoType">MVP in progress</small>
+                <h3 data-i18n="projectTwoTitle">Minimal Finance Tracker</h3>
+              </div>
+              <a class="live-button" href="project-detail.html?project=finance-app" data-i18n="viewDetails">查看详情</a>
+            </header>
+            <div class="project-images">
+              <div>
+                <img src="assets/creator-tile-2.png" alt="Finance app preview" />
+                <img src="assets/project-finance.png" alt="Finance tracker details" />
+              </div>
+              <img src="assets/creator-tile-6.png" alt="Content workflow preview" />
+            </div>
+          </article>
+
+          <article class="stack-card">
+            <header>
+              <span class="project-number">03</span>
+              <div>
+                <small data-i18n="projectThreeType">Product Lab</small>
+                <h3 data-i18n="projectThreeTitle">Knowledge & Outfit Systems</h3>
+              </div>
+              <a class="live-button" href="project-detail.html?project=workspace" data-i18n="viewDetails">查看详情</a>
+            </header>
+            <div class="project-images">
+              <div>
+                <img src="assets/project-knowledge.png" alt="Knowledge system preview" />
+                <img src="assets/project-outfit.png" alt="Outfit library preview" />
+              </div>
+              <img src="assets/creator-tile-8.png" alt="Tools system preview" />
+            </div>
+          </article>
+
+          <article class="stack-card">
+            <header>
+              <span class="project-number">04</span>
+              <div>
+                <small data-i18n="projectFourType">Business Tool</small>
+                <h3 data-i18n="projectFourTitle">Attendance Management System</h3>
+              </div>
+              <a class="live-button" href="project-detail.html?project=attendance" data-i18n="viewDetails">查看详情</a>
+            </header>
+            <div class="project-images">
+              <div>
+                <img src="assets/creator-tile-4.png" alt="Attendance dashboard preview" />
+                <img src="assets/creator-tile-7.png" alt="Management workflow preview" />
+              </div>
+              <img src="assets/hero-product-lab.png" alt="Attendance management project" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="picks-section reveal" id="picks">
+        <h2 class="section-title hero-heading" data-i18n="picksTitle">我的推荐</h2>
+        <div class="picks-grid">
+          <a class="pick-card" href="picks-detail.html?type=books">
+            <span>01</span>
+            <h3 data-i18n="pickOneTitle">书籍</h3>
+            <p data-i18n="pickOneBody">作者花几年写的精华，只要花一周就能读完。光凭这一点，书就值得看——不管是别人用半生总结的经验，还是一个读完很久都放不下的好故事。</p>
+          </a>
+          <a class="pick-card" href="picks-detail.html?type=films">
+            <span>02</span>
+            <h3 data-i18n="pickTwoTitle">影视</h3>
+            <p data-i18n="pickTwoBody">好的剧或电影不只是消遣——它是精心设计的作品。每一帧、每一句台词、每一个剪辑都是选择。看到好作品的时候，你会被触动，然后惊叹于背后的用心。</p>
+          </a>
+          <a class="pick-card" href="picks-detail.html?type=podcasts">
+            <span>03</span>
+            <h3 data-i18n="pickThreeTitle">播客</h3>
+            <p data-i18n="pickThreeBody">把碎片时间变成输入场，关注 AI、创作、生活方式和商业观察。</p>
+          </a>
+          <a class="pick-card" href="picks-detail.html?type=tools">
+            <span>04</span>
+            <h3 data-i18n="pickFourTitle">工具</h3>
+            <p data-i18n="pickFourBody">Codex、ChatGPT、DeepSeek、Canva、剪映，以及任何能把想法推进一步的工具。</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-section reveal" id="contact">
+        <div>
+          <h2 class="section-title hero-heading" data-i18n="contactTitle">联系方式</h2>
+          <p data-i18n="contactBody"></p>
+        </div>
+        <div class="contact-card">
+          <span data-i18n="contactLabel">邮箱</span>
+          <a href="mailto:xiaomaZeng@gmail.com">xiaomaZeng@gmail.com</a>
+          <button class="contact-button" id="copyEmail" type="button" data-i18n="copyEmail">Copy Email</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Zora</span>
+      <span>Personal Brand + Portfolio + Product Lab + AI Studio</span>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

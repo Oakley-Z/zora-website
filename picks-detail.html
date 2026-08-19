@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zora recommendations detail page." />
+    <title>Zora | Picks</title>
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-light" aria-hidden="true"></div>
+
+    <main class="site-shell picks-detail-shell">
+      <section class="picks-detail-hero">
+        <div class="language-switcher fade-in" aria-label="Language">
+          <button class="lang-button" data-lang="zh-CN">简体中文</button>
+          <button class="lang-button" data-lang="zh-HK">繁體中文</button>
+          <button class="lang-button" data-lang="en">English</button>
+        </div>
+
+        <nav class="hero-nav fade-in" aria-label="Primary">
+          <a href="index.html#about" data-i18n="navAbout">关于我</a>
+          <a href="index.html#services" data-i18n="navSkills">我的技能</a>
+          <a href="index.html#projects" data-i18n="navProjects">我的项目</a>
+          <a href="index.html#picks" data-i18n="navPicks">我的推荐</a>
+          <a href="index.html#contact" data-i18n="navContact">联系我</a>
+        </nav>
+
+        <div class="picks-detail-intro fade-in">
+          <a class="detail-back" href="index.html#picks" aria-label="返回推荐" title="返回推荐">
+            <span aria-hidden="true">←</span>
+          </a>
+          <p class="detail-kicker" data-i18n="detailKicker">推荐详情</p>
+          <h1 class="hero-heading" id="picksTitle">书籍</h1>
+          <p id="picksIntro">那些读完之后，会改变一点点判断、表达和生活方式的内容。</p>
+        </div>
+      </section>
+
+      <section class="recommendation-section reveal">
+        <div class="recommendation-tabs" id="categoryTabs" aria-label="Recommendation filters"></div>
+        <div class="recommendation-grid" id="recommendationGrid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Zora</span>
+      <span>Personal Brand + Portfolio + Product Lab + AI Studio</span>
+    </footer>
+
+    <script src="picks-detail.js"></script>
+  </body>
+</html>
