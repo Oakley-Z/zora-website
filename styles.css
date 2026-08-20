@@ -1103,7 +1103,8 @@ html[lang^="zh"] .picks-detail-intro h1 {
   .detail-media-grid,
   .detail-content,
   .recommendation-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
   }
 
   .recommendation-card {
@@ -1118,7 +1119,7 @@ html[lang^="zh"] .picks-detail-intro h1 {
 
   .recommendation-card div {
     border-top: 1px solid rgba(215, 226, 234, 0.14);
-    padding-top: 18px;
+    padding-top: 14px;
   }
 
   .picks-detail-intro {
@@ -1197,16 +1198,16 @@ html[lang^="zh"] .picks-detail-intro h1 {
 
   .recommendation-card div {
     gap: 10px;
-    padding: 16px 16px 18px;
+    padding: 14px 14px 16px;
   }
 
   .recommendation-card h2 {
-    font-size: clamp(1.2rem, 7vw, 1.55rem);
+    font-size: clamp(1.1rem, 7vw, 1.45rem);
   }
 
   .recommendation-card p {
-    font-size: 0.9rem;
-    line-height: 1.55;
+    font-size: 0.82rem;
+    line-height: 1.45;
   }
 }
 
@@ -1221,5 +1222,32 @@ html[lang^="zh"] .picks-detail-intro h1 {
 
   .cursor-light {
     display: none;
+  }
+
+  .recommendation-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .recommendation-card img {
+    aspect-ratio: 3 / 4;
+  }
+
+  .recommendation-card div {
+    padding: 12px 12px 14px;
+    gap: 8px;
+  }
+
+  .recommendation-card h2 {
+    font-size: 0.95rem;
+  }
+
+  .recommendation-card small {
+    font-size: 0.65rem;
+  }
+
+  .recommendation-card p {
+    font-size: 0.68rem;
+    line-height: 1.35;
   }
 }
