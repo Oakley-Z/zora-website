@@ -1106,6 +1106,21 @@ html[lang^="zh"] .picks-detail-intro h1 {
     grid-template-columns: 1fr;
   }
 
+  .recommendation-card {
+    grid-template-rows: auto auto;
+  }
+
+  .recommendation-card img {
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 3 / 4;
+  }
+
+  .recommendation-card div {
+    border-top: 1px solid rgba(215, 226, 234, 0.14);
+    padding-top: 18px;
+  }
+
   .picks-detail-intro {
     justify-items: center;
     text-align: center;
@@ -1178,6 +1193,20 @@ html[lang^="zh"] .picks-detail-intro h1 {
 
   .picks-grid {
     grid-template-columns: 1fr;
+  }
+
+  .recommendation-card div {
+    gap: 10px;
+    padding: 16px 16px 18px;
+  }
+
+  .recommendation-card h2 {
+    font-size: clamp(1.2rem, 7vw, 1.55rem);
+  }
+
+  .recommendation-card p {
+    font-size: 0.9rem;
+    line-height: 1.55;
   }
 }
 
